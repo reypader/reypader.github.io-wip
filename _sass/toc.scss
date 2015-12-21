@@ -1,0 +1,36 @@
+#toc{
+  display: inline-block;
+  float: right;
+  margin-left: $spacing-unit;
+  max-width: 350px;
+  min-width: 350px;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.clickable-header {
+  cursor: pointer;
+}
+
+//.clickable-header:hover {
+//  text-decoration:underline;
+//}
+.top-level-header {
+  //display:inline-block;
+  //margin-bottom: 15px;
+  ////margin-top: 20px;
+  //float:left;
+}
+.back-to-top {
+  position: relative;
+  top: -50px;
+  display: inline;
+  color: #ddd;
+  margin-left: 5px;
+  cursor: pointer;
+  float: right;
+  font-size: $base-font-size * 2;
+
+}

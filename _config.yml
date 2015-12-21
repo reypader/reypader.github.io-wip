@@ -1,0 +1,26 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: RMPader
+tagline: I code stuff...
+email: reynaldmpader@gmail.com
+description: >
+  This blog is by no means a source of "absolute truth".
+  It's simply a guide to those who wants them. I hope that
+  you find the contents of this site helpful and may the
+  undying light of learning guide you.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://reypader.github.io" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username:  reypader
+
+# Build settings
+markdown: redcarpet
+
+redcarpet:
+  extensions: [with_toc_data]

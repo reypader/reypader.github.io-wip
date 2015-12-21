@@ -1,0 +1,46 @@
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.social-media-list i {
+  font-size: $base-font-size * 1.5;
+}
+
+.social-media-list i {
+  color: #333;
+}
+
+.post-content, .post-header {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+  }
+
+  time {
+    font-style: italic;
+    color: #aaa;
+  }
+}
+
+.post-content {
+  p {
+    line-height: 1.7;
+    color: #555;
+    font-size: $base-font-size;
+  }
+}
+
+hr {
+  margin-top: 50px;
+  border-top: 5px solid #ddd;
+}
+
