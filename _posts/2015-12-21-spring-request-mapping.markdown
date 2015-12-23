@@ -3,7 +3,7 @@ layout: post
 title:  "How to: Declare more complex request mappings in Spring"
 date:   2015-12-21 18:53:00 +0800
 description: "Learn various ways of declaring request handling in Spring. You'll be able to handle request based on path variables, request parameters, content types, etc. You'll also learn how to handle exceptions to create custom error responses."
-categories: java spring spring-rest
+tags: java spring spring-rest
 ---
 There's a lot of how-to's out there that could teach you how to create a REST API server with [Spring Boot](http://projects.spring.io/spring-boot/). Actually, spring already has a pretty good [example](https://spring.io/guides/gs/rest-service/). However, most of those found out there are pretty simplistic - the usual "Hello World" application. Of course, if that already showed you what you wanted, you wouldn't still be looking and stumble upon my humble blog. So, I would show you instead how to make a REST API with *the common stuff and use cases* that I think you're probably looking for.
 

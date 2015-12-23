@@ -20,12 +20,6 @@ a {
   color: #333;
 }
 
-.post-content, .post-header {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: bolder;
-  }
-}
-
 .post-meta {
   time {
     font-style: italic;
@@ -34,9 +28,12 @@ a {
 }
 
 .content-wrapper {
-    line-height: 1.7;
-    color: #555;
-    font-size: $base-font-size;
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+  }
+  line-height: 1.7;
+  color: #555;
+  font-size: $base-font-size;
 }
 
 hr {

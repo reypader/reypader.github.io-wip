@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-
+<h3>Displaying posts under: <em>{{ page.tag }}</em></h3>
+<hr style="margin-top:0"/>
 <div class="home">
 
   <div class="row">
-    {% for post in site.posts %}
+    {% for post in page.posts %}
+
     <div class="panel panel-default col-md-4">
       <h3>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -18,7 +20,7 @@ layout: default
       <p>{{post.description}}</p>
       {% for tag in post.tags %}
       <a href="/tag/{{tag}}.html">
-        <span class="badge">{{tag}}</span>
+      <span class="badge">{{tag}}</span>
       </a>
       {% endfor %}
       <div class="clearfix">&nbsp;</div>
