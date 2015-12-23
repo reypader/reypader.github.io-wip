@@ -25,3 +25,56 @@ markdown: redcarpet
 
 redcarpet:
   extensions: [with_toc_data]
+
+
+resume:
+  roles:
+    - name: Associate Developer
+      duration-from: June 2012
+      duration-to: September 2013
+      description: Entry-level developer for an online financial company. Has been involved in developing solutions for a mobile financing system.
+    - name: Mid-level Developer
+      duration-from: October 2013
+      duration-to: January 2015
+      description: Lead a 10-man team for the same online financial company. Has tackled solutions architecture and development as well as requirments gathering with the customer.
+    - name: Mid-level Developer & Team/Development Lead
+      duration-from: February 2015
+      duration-to: present
+      description: Took the lead on most of the project I've been involved in. Created solutions in the cloud for clients.
+  skills:
+    core:
+      - name: Java
+        rate: 9
+        icon: icon-java-bold
+        color: fa7800
+      - name: Git
+        rate: 6
+        icon: icon-git
+        color: f05133
+      - name: Spring Framework
+        rate: 8
+        icon: icon-spring
+        color: 6db33f
+      - name: JavaScript (vanilla)
+        rate: 4
+        icon: icon-javascript
+        color: e6d24c
+      - name: Maven
+        rate: 8
+        icon: icon-maven
+        color: aa0954
+      - name: AngularJS
+        rate: 4
+        icon: icon-angular
+        color: b63032
+    other:
+      - name: JUnit
+        rate: 7
+      - name: Mockito
+        rate: 6
+      - name: JPA
+        rate: 5
+      - name: Google Guice
+        rate: 5
+      - name: Swagger
+        rate: 4

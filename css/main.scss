@@ -1,43 +1,41 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: "Lato", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size: 16px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$text-color:       #606666;
+$text-color: #606666;
 $background-color: #fdfdfd;
 $brand-color: #003a48;
 
-$grey-color:       #828282;
+$grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
 
-$primary-color-dark:   #455A64;
-$primary-color:        #607D8B;
-$primary-color-light:  #CFD8DC;
-$primary-color-text:   #FFFFFF;
-$accent-color:         #CDDC39;
-$primary-text-color:   #212121;
+$primary-color-dark: #455A64;
+$primary-color: #607D8B;
+$primary-color-light: #CFD8DC;
+$primary-color-text: #FFFFFF;
+$accent-color: #CDDC39;
+$primary-text-color: #212121;
 $secondary-text-color: #727272;
-$divider-color:        #B6B6B6;
+$divider-color: #B6B6B6;
 
 // Width of the content area
-$content-width:    1200px;
+$content-width: 1200px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-small: 768px;
+$on-medium: 992px;
+$on-large: 1200px;
 
-$sidebar-width:    200px;
+$sidebar-width: 200px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -47,16 +45,12 @@ $sidebar-width:    200px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (min-width: $device) {
+    @content;
+  }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "layout",
-        "toc",
-        "syntax-highlighting"
-;
+@import "layout",
+"toc",
+"syntax-highlighting";
