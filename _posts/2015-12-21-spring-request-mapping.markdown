@@ -18,7 +18,7 @@ public class SampleController {
     ...
 }
 ```
-You can find the source code [here](https://github.com/reypader/blogstuff/tree/master/spring-boot-rest).
+You can find the source code [here](https://github.com/reypader/blogstuff/tree/master/spring-request-mapping).
 
 <br>
 Here we go...

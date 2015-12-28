@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to: Integrate Google Cloud Endpoints into the Spring Container"
-date:   2015-12-26 18:53:00 +0800
+date:   2015-12-25 18:53:00 +0800
 description: "When using Google App Engine, you have the a new REST framework available at your disposal - Google Cloud Endpoints. Unfortunately, it's not meant for use with Spring Beans. This article shows you how to tweak Google Cloud Endpoints and make them instantiate as Spring Beans."
 tags: java spring google-app-engine google-cloud-endpoints
 ---
