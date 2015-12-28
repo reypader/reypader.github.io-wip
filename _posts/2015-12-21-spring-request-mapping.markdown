@@ -2,6 +2,7 @@
 layout: post
 title:  "How to: Declare more complex request mappings in Spring"
 date:   2015-12-21 18:53:00 +0800
+edited: 2015-12-26 14:09:00 +0800
 description: "Learn various ways of declaring request handling in Spring. You'll be able to handle request based on path variables, request parameters, content types, etc. You'll also learn how to handle exceptions to create custom error responses."
 tags: java spring spring-rest
 ---
@@ -130,10 +131,10 @@ So far, we have only been responding with Strings. Of course, this is not the co
 @RequestMapping(value = "/post-with-body",
                 method = RequestMethod.POST,
                 params = "json=true")
-public SampleResource sampleJsonResponse(@RequestBody PostRequest request) throws JsonProcessingException {
-    SampleResource resource = new SampleResource();
-    resource.setMessage(samplePostBody(request));
-    return resource;
+public SampleResponse sampleJsonResponse(@RequestBody PostRequest request) throws JsonProcessingException {
+    SampleResponse response = new SampleResponse();
+    response.setMessage(samplePostBody(request));
+    return response;
 }
 ```
 
@@ -200,12 +201,12 @@ Setting up your own exception handler is ideal for those cases when you want to 
 
 ```java
 @ExceptionHandler({JsonProcessingException.class, IOException.class})
-public ResponseEntity<ErrorResource> handleAllExceptions(Exception e) {
-    ErrorResource errorResource = new ErrorResource();
-    errorResource.setMessage(e.getMessage());
+public ResponseEntity<ErrorResponse> handleAllExceptions(Exception e) {
+    ErrorResponse errorResponse = new ErrorResponse();
+    errorResponse.setMessage(e.getMessage());
     
     return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                         .body(errorResource);
+                         .body(errorResponse);
 }
 ```
 
