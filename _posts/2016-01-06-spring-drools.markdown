@@ -159,8 +159,6 @@ stopping the server? You should be...
 Fetching rules remotely is actually the most common use-case for Drools in my opinion. Strangely enough, I've yet to find a tutorial on how to do this. Hopefully, this section
 does a decent enough job to show you how.
 
----------------
-
 ### Drools Workbench
 
 <img class="img-rounded img-responsive center-block" src="https://docs.jboss.org/drools/release/6.2.0.Final/drools-docs/html_single/images/Workbench/ReleaseNotes/kie-drools-wb.png">
@@ -173,7 +171,6 @@ the rules themselves are also Maven Artifacts. Aside from serving as a repositor
 The README of the sample source code contains guides on how to [author rules](https://github.com/reypader/blogstuff/tree/master/spring-drools#setup-a-drools-project) as well as setting up your [Drools Workbench and Wildfly](https://github.com/reypader/blogstuff/tree/master/spring-drools#setup-wildfly).
 Wildfly was used over Tomcat due to compatibility issues.
 
----------------
 
 ### The Facts Artifact
 
@@ -182,7 +179,6 @@ is to have a facts artifact ready to be imported. The reason for this is that si
 definition of the classes being used. By now you've probably realized that the same is true with API artifacts of certain libraries (e.g. [log4j-api](http://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api), [JPA](http://mvnrepository.com/artifact/javax.persistence/persistence-api)).
 Hence, separating the fact objects artifact becomes mandatory when doing remote rules.
 
----------------
 
 ### Retrieving a rule from Drools Workbench
 
