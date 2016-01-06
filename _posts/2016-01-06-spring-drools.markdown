@@ -71,7 +71,7 @@ Based on this table, if a user provides a rating of 9 in math, 9 in software, 5 
 there will be two suggested courses - Theoretical Physics and Computer Science.
 
 For simplicity, the only aspect that will change for each section is how the `KieContainer` is configured. The assumption is that you have an idea on how to use
-the `KieContainer` to fire rules. You can find the source code [here](https://github.com/reypader/blogstuff/tree/master/spring-drools).
+the `KieContainer` to fire rules. If not, the Drools documentation has a [section](http://docs.jboss.org/drools/release/6.3.0.Final/drools-docs/html_single/index.html#KIEExamplesSection) to show you how to do just that. You can find the source code [here](https://github.com/reypader/blogstuff/tree/master/spring-drools).
 You will also find a guide there on how to setup [Drools Workbench](https://docs.jboss.org/drools/release/latest/drools-docs/html/pt05.html) and [Wildfly](http://wildfly.org/) (an alternative to Tomcat which is more compatible with Drools Workbench) on your machine.
 
 ---------------
