@@ -34,6 +34,10 @@ a {
   line-height: 1.7;
   color: #555;
   font-size: $base-font-size;
+
+  td, thead th {
+    text-align:center;
+  }
 }
 
 hr {
