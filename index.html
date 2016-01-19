@@ -1,23 +1,30 @@
 ---
 layout: default
 ---
-
 <div class="home">
 
-  <div class="row">
+  <div class="flowing">
     {% for post in site.posts %}
     <div class="col-md-4">
       <div class="post-card panel panel-default">
         <h3>
+          {% if post.soon %}
+          <span class="soon" title="coming soon...">{{ post.title }}</span>
+          {% else %}
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          {% endif %}
         </h3>
         <span class="post-meta">
            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+             {% if post.soon %}
+             Coming soon...
+             {% else %}
              {{ post.date | date: "%b %-d, %Y" }}
+             {% endif %}
            </time>
         </span>
 
-        <p>{{post.description}}</p>
+        <p>{{post.description | markdownify}}</p>
         {% for tag in post.tags %}
         <a href="/tag/{{tag}}.html">
           <span class="badge">{{tag}}</span>

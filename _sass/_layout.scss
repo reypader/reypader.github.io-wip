@@ -50,6 +50,18 @@ hr {
   padding-right: 15px;
 }
 
+.soon {
+  cursor: not-allowed;
+}
+
+.flowing {
+  margin-right: -15px;
+  margin-left: -15px;
+  display:flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
 /* Resume */
 .resume {
   .profile {
