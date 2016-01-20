@@ -24,7 +24,7 @@ layout: default
            </time>
         </span>
 
-        <p>{{post.description | markdownify}}</p>
+        {{post.description | markdownify}}
         {% for tag in post.tags %}
         <a href="/tag/{{tag}}.html">
           <span class="badge">{{tag}}</span>
